@@ -1,0 +1,47 @@
+ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    width: 1000px;
+
+}
+
+li {
+    background-color: #f7f7f7;
+    border: 2px solid darkgrey;
+    border-radius: 1px;
+    font-size: 2rem;
+    margin: 10px;
+    padding: 1rem;
+    height: 200px;
+    width: 100px;
+    list-style: none;
+    flex: 1;
+    text-align: center;
+}
+
+.i-html {
+    background: url('images/0-sprite.png') 0 0;
+    width: 280px;
+    height: 410px;
+    display: block;
+    margin: 20px auto;
+}
+
+.i-css {
+    background: url('images/0-sprite.png') -290px 0;
+    width: 280px;
+    height: 410px;
+    display: block;
+    margin: 20px auto;
+}
+
+.i-js {
+    background: url('images/0-sprite.png') -580px 0;
+    width: 280px;
+    height: 410px;
+    display: block;
+    margin: 20px auto;
+}
