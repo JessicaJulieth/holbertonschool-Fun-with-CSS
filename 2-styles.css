@@ -1,0 +1,54 @@
+  label {
+    position: relative;
+    display: block;
+    width: 150px;
+    height: 50px;
+    border-radius: 100px;
+    border: 2px solid grey;
+	  text-indent: -9999px;
+    cursor: pointer;
+    background: #ccc;
+    content: "No";
+  }
+  
+  input[type=checkbox]{ 
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    -webkit-appearance: none;
+    transform: scale(1.1);
+  }
+  
+  label:before {
+    position: absolute;
+    content: "Yes";
+    height: 65px;
+    width: 65px;
+    left: 100px;
+    right: 600;
+    bottom: -7px;
+    background: #fff;
+    transition: -5s;
+    border-radius: 90px;
+    border: 2px solid grey;
+  }
+  
+  input:checked + label {
+    background-color: #e1013c;
+  }
+
+  input:checked + label:before {
+    left: calc(100% - -3px);
+    transform: translateX(-100%);
+  }
+  
+  label:active:after {
+    width: 130px;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
